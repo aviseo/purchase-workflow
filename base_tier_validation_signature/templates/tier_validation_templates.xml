@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="tier_validation_reviews_signature" inherit_id="base_tier_validation.tier_validation_reviews">
+        <xpath expr="//field[@name='review_ids']/tree" position="inside">
+            <field name="signature"/>
+        </xpath>
+    </template>
+
+</odoo>
