@@ -6,4 +6,5 @@ from odoo import api, models, fields
 class TierReview(models.Model):
     _inherit = "tier.review"
 
-    signature = fields.Binary()
+    signature = fields.Image()
+    

@@ -7,7 +7,7 @@ from odoo import fields, models
 class CommentWizard(models.TransientModel):
     _inherit = "comment.wizard"
     
-    signature = fields.Binary()
+    signature = fields.Image()
 
     def add_comment(self):
         self.ensure_one()
