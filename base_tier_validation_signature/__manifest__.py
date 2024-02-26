@@ -14,4 +14,9 @@
     "installable": True,
     "depends": ["base_tier_validation"],
     "data": ["wizard/comment_wizard.xml"],
+    "assets": {
+        "web.assets_backend": [
+            "/base_tier_validation_signature/static/src/xml/tier_review_template.xml",
+        ],
+    },
 }

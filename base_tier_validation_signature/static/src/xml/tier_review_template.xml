@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t t-inherit="base_tier_validation.Collapse" t-inherit-mode="extension" owl="1">
+        <xpath expr="//table[hasclass('table-condensed')]/thead/tr" position="inside">
+            <th name="th_signature">
+                Signature
+            </th>
+        </xpath>
+        <xpath expr="//table[hasclass('table-condensed')]/tbody/t/tr" position="inside">
+            <td>
+                <span t-field="review.signature"/>
+            </td>
+        </xpath>
+    </t>
+</templates>
