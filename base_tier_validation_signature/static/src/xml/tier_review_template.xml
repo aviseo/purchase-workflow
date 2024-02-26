@@ -8,7 +8,7 @@
         </xpath>
         <xpath expr="//table[hasclass('table-condensed')]/tbody/t/tr" position="inside">
             <td>
-                <span t-field="review.signature"/>
+                <img t-att-src="review.signature_b64"/>
             </td>
         </xpath>
     </t>
