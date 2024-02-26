@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2019 Ecosoft Co., Ltd. (http://ecosoft.co.th)
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="inherit_view_comment_wizard_signature" model="ir.ui.view">
+        <field name="name">Comment Wizard</field>
+        <field name="model">comment.wizard</field>
+        <field name="inherit_id" ref="base_tier_validation.comment_wizard_signature"/>
+        <field name="arch" type="xml">
+            <field name="comment" position="after">
+                <field name="signature" class="oe_inline" widget="signature"/>
+            </field>
+        </field>
+    </record>
+</odoo>
